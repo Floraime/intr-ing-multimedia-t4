@@ -1,0 +1,47 @@
+@import "bootstrap/scss/functions";
+
+// scss-docs-start theme-color-variables
+$primary:       #2699FB;
+$secondary:     #20AED2;
+//$success:       $green;
+//$info:          $cyan;
+//$warning:       $yellow;
+//$danger:        $red;
+//$light:         $gray-100;
+//$dark:          $gray-900;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start border-radius-variables
+$border-radius:               .200rem; // default: .375rem
+//$border-radius-sm:            .25rem !default;
+//$border-radius-lg:            .5rem !default;
+//$border-radius-xl:            1rem !default;
+//$border-radius-xxl:           2rem !default;
+//$border-radius-pill:          50rem !default;
+// scss-docs-end border-radius-variables
+
+@import "bootstrap/scss/variables";
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+) !default;
+// scss-docs-end theme-colors-map
+
+@import "bootstrap/scss/bootstrap";
+
+// extra customs
+
+.form-floating {
+  input {
+    border-color: $primary;
+    border-width: 2px;
+  }
+}

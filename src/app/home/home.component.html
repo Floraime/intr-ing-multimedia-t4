@@ -1,0 +1,27 @@
+<p class="text-primary route-tittle"><strong>Ingeniería Multimedia by Floraime</strong></p>
+<div class="content">
+  <div class="m-4 col main-max-width text-center">
+    <div class="bg-primary-low square-a my-3"></div>
+    <div class="row d-flex px-2 my-4 justify-content-between">
+      <div class="bg-primary-low square-b"></div>
+      <div class="bg-primary-low square-b"></div>
+    </div>
+
+    <div class="text-primary">
+      <p>
+        <strong>Ingeniería Multimedia</strong>
+      </p>
+      <p>{{TextTest}}</p>
+    </div>
+
+    <div class="home-carousel d-flex flex-row justify-content-between">
+      <a href=""><div class="left-arrow"></div></a>
+      <div class="d-flex flex-row">
+        <a *ngFor="let color of CircleColors" href="" class="mx-1">
+          <div class="small-circle" [style]="{'background-color': color}"></div>
+        </a>
+      </div>
+      <a href=""><div class="right-arrow"></div></a>
+    </div>
+  </div>
+</div>

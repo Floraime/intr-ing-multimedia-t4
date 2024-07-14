@@ -1,0 +1,36 @@
+.main-menu-icon {
+  width: 16px;
+  height: 16px;
+  background: url('/assets/images/menu.svg') no-repeat center center;
+  position: fixed;
+  top: 5px;
+  z-index: 10;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.main-menu-wrapper {
+  position: fixed;
+  width: 255px;
+  top: 0;
+  z-index: 5;
+}
+
+.main-header {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+}
+
+
+.external-router-container {
+  height: 100%;
+  margin-top: 20px;
+}
+
+.router-container {
+  height: 100%;
+  margin-top: 60px;
+}

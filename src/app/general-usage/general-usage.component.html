@@ -1,0 +1,10 @@
+<div class="external-router-container">
+  <div class="main-menu-icon m-3" (click)="SwapMenuVisibility()"></div>
+  <div class="main-header bg-white"></div>
+  <div class="main-menu-wrapper h-100" *ngIf="ShowMenu">
+    <app-menu [(ShowMenu)]="ShowMenu"></app-menu>
+  </div>
+  <div class="router-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

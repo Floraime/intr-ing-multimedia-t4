@@ -1,0 +1,20 @@
+<p class="text-primary route-tittle"><strong>Comunidad</strong></p>
+
+<div class="content">
+  <div class="mx-4 mt-5 col d-flex flex-column main-max-width bg-primary-low" style="position: relative">
+    <div *ngFor="let message of Messages" class="d-flex flex-row my-3 mx-auto">
+      <div class="profile-icon message-icon"></div>
+      <div class="user-text mx-2 d-flex">
+        <p class="text-primary">{{ message }}</p>
+      </div>
+    </div>
+    <div class="content-box bg-primary-medium"></div>
+    <div class="m-3">
+      <div class="double-quotes"></div>
+      <p class="text-primary" style="font-size: larger;">
+        La destrucción también es creación"
+      </p>
+    </div>
+    <div  type="button" class="add-button"></div>
+  </div>
+</div>

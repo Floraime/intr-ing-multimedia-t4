@@ -1,0 +1,29 @@
+<div class="content bg-primary-low h-100">
+  <div class="options-button"></div>
+
+  <div class="content pt-4">
+
+    <div class="mx-4 mt-5 col d-flex flex-column main-max-width bg-primary-low" style="position: relative">
+      <div class="input-group mb-3">
+        <span class="input-group-text " id="basic-addon1">
+          <div class="magnify-b"></div>
+        </span>
+        <input type="text" class="form-control text-primary" placeholder="Buscar..." value="Diseñador" aria-describedby="basic-addon1">
+      </div>
+
+      <ul class="list-group">
+        <li *ngFor="let job of Jobs" class="list-group-item text-primary">
+          {{ job }}
+        </li>
+      </ul>
+
+      <p class="text-primary m-3 mb-1" style="font-size: small"><strong>Últimas búsquedas</strong></p>
+      <ul class="list-group">
+        <li *ngFor="let job of RecentJobs" class="list-group-item text-primary d-flex flex-row align-items-center" style="gap: 5px">
+          <div class="magnify-a"></div>
+          <span>{{ job }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

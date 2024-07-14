@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+@import "assets/styles/custom";
+@import "bootstrap/scss/bootstrap-grid";
+
+// Your custom styles
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.bg-primary-low {
+  background-color: #F1F9FF;
+}
+
+.bg-primary-medium {
+  background-color: #BCE0FD;
+}
+
+.route-tittle {
+  position: fixed;
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 14px;
+  width: 226px;
+  text-align: center;
+}
+
+.main-max-width {
+  max-width: 327px;
+  margin: auto !important;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  background: url('/assets/images/avatars/empty.svg') no-repeat center center;
+}
+
+.double-quotes {
+  width: 16px;
+  height: 16px;
+  background: url('/assets/images/double-quotes.svg') no-repeat center center;
+}
+
+.options-button {
+  width: 16px;
+  height: 16px;
+  background: url('/assets/images/options.svg') no-repeat center center;
+}
+
+.magnify-a {
+  width: 16px;
+  height: 16px;
+  background: url('/assets/images/magnify-a.svg') no-repeat center center;
+}
+
+.magnify-b {
+  width: 16px;
+  height: 16px;
+  background: url('/assets/images/magnify-b.svg') no-repeat center center;
+}

@@ -1,0 +1,17 @@
+<div class="container bg-primary h-100 d-flex flex-column">
+  <div class="menu-header d-flex">
+    <div class="d-flex flex-row mx-auto justify-content-center align-items-center">
+      <div class="profile-icon"></div>
+      <div class="user-info mx-2 d-flex flex-column text-white">
+        <p class="mb-0 user-name"><strong>Floraime Ramirez</strong></p>
+        <p class="user-city">Magangué, Bolivar</p>
+      </div>
+    </div>
+  </div>
+  <div class="menu-items d-flex flex-column">
+    <a *ngFor="let item of MenuItems" class="d-flex flex-row my-2" (click)="NavigateTo(item.Url)">
+      <div class="menu-icon" [style.background-image]="CalculateURL(item.Icon)"></div>
+      <p class="menu-text text-white">{{ item.Text }}</p>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+<div class="h-100 w-100 bg-primary-low">
+  <div class="col m-4 main-box text-center">
+    <p class="text-primary text-center tittle-box mx-auto mb-4">
+      <strong>Ingeniería Multimedia by Floraime</strong>
+    </p>
+    <div class="card main-max-width m-auto">
+      <div class="circle-icon mx-auto"></div>
+      <div class="card-body pt-0">
+        <p class="text-secondary text-center tittle-box mx-auto">
+          <strong>Crear una cuenta</strong>
+        </p>
+        <form>
+          <div class="col">
+            <div class="form-floating mx-2 my-3">
+              <input type="text" class="form-control" id="fullName" placeholder="">
+              <label for="fullName" class="text-primary">Nombre Completo</label>
+            </div>
+
+            <div class="form-floating mx-2 my-3">
+              <input type="text" class="form-control" id="email" placeholder="">
+              <label for="email" class="text-primary">Correo</label>
+            </div>
+
+            <div class="form-floating mx-2 my-3">
+              <input type="password" class="form-control" id="password" placeholder="">
+              <label for="password" class="text-primary">Contraseña</label>
+            </div>
+
+            <div class="form-floating mx-2 my-3">
+              <input type="password" class="form-control" id="confirmPassword" placeholder="">
+              <label for="confirmPassword" class="text-primary">Confirmar contraseña</label>
+            </div>
+
+            <p class="text-primary text-center sub-tittle-box mx-auto my-4">
+              Al crear una cuenta, aceptas la
+              <a [href]="TermsAndConditions">
+                <strong>PolÍtica de Privacidad y Términos de Uso</strong>
+              </a>
+            </p>
+
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <p class="text-primary text-center sub-tittle-box mx-auto my-2">
+      ¿Ya eres miembro?
+      <a href=""><strong>Iniciar sesión</strong></a>
+    </p>
+
+    <button type="button" class="btn btn-primary text-white my-2" [routerLink]="['/home']">Continuar</button>
+
+  </div>
+</div>

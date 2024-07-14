@@ -1,0 +1,30 @@
+.menu-header {
+  height: 104px;
+  width: 255px;
+  margin: -12px;
+  background-color: #BCE0FD
+}
+
+.menu-items {
+  margin-top: 50px;
+  margin-left: 25px;
+  .menu-icon {
+    height: 16px;
+    width: 16px;
+  }
+  .menu-text {
+    margin-left: 25px;
+    font-size: small;
+  }
+}
+
+.user-info {
+  width: 117px;
+  height: 31px;
+  .user-name {
+    font-size: small;
+  }
+  .user-city {
+    font-size: x-small;
+  }
+}

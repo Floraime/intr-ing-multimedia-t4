@@ -1,0 +1,22 @@
+.user-text {
+  width: 263px;
+}
+
+.message-icon {
+  position: relative;
+  left: -15px;
+}
+
+.content-box {
+  width: 327px;
+  height: 168px;
+}
+
+.add-button {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: url('/assets/images/plus.svg') no-repeat center center;
+}
