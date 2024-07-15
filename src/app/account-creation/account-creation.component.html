@@ -4,7 +4,9 @@
       <strong>Ingeniería Multimedia by Floraime</strong>
     </p>
     <div class="card main-max-width m-auto">
-      <div class="circle-icon mx-auto"></div>
+      <div class="circle-icon mx-auto">
+        <div *ngIf="Loading" class="loader"></div>
+      </div>
       <div class="card-body pt-0">
         <p class="text-secondary text-center tittle-box mx-auto">
           <strong>Crear una cuenta</strong>
@@ -33,7 +35,7 @@
 
             <p class="text-primary text-center sub-tittle-box mx-auto my-4">
               Al crear una cuenta, aceptas la
-              <a [href]="TermsAndConditions">
+              <a (click)="GoLink()">
                 <strong>PolÍtica de Privacidad y Términos de Uso</strong>
               </a>
             </p>
@@ -48,7 +50,7 @@
       <a href=""><strong>Iniciar sesión</strong></a>
     </p>
 
-    <button type="button" class="btn btn-primary text-white my-2" [routerLink]="['/home']">Continuar</button>
+    <button type="button" class="btn btn-primary text-white my-2" [disabled]="Loading" (click)="GoHome()">Continuar</button>
 
   </div>
 </div>

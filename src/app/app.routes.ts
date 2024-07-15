@@ -6,10 +6,10 @@ import {GeneralUsageComponent} from "./general-usage/general-usage.component";
 import {JobSearchComponent} from "./job-search/job-search.component";
 
 export const routes: Routes = [
+  { path: '', redirectTo: 'crear-cuenta', pathMatch: 'full' },
   { path: '',
     component: GeneralUsageComponent,
     children: [
-      { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
       { path: 'empleos', component: JobSearchComponent },
       { path: 'comunidad', component: CommunityComponent }

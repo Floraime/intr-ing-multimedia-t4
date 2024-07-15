@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import {NgForOf} from "@angular/common";
+import {YouTubePlayer} from "@angular/youtube-player";
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
-    NgForOf
+    NgForOf,
+    YouTubePlayer
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
