@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import {NgForOf} from "@angular/common";
+import {YouTubePlayer} from "@angular/youtube-player";
 
 @Component({
   selector: 'app-community',
   standalone: true,
-  imports: [
-    NgForOf
-  ],
+    imports: [
+        NgForOf,
+        YouTubePlayer
+    ],
   templateUrl: './community.component.html',
   styleUrl: './community.component.scss'
 })
